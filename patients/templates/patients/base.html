@@ -1,0 +1,8 @@
+<!doctype html>
+<html>
+<head><title>{% block title %}Nidaan{% endblock %}</title></head>
+<body>
+  {% for message in messages %}<p class="msg">{{ message }}</p>{% endfor %}
+  {% block content %}{% endblock %}
+</body>
+</html>
